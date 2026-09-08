@@ -37,7 +37,7 @@ logging.getLogger("httpx").setLevel(logging.WARNING)
 logging.getLogger("httpcore").setLevel(logging.WARNING)
 
 # Yahan apna Bot Token dalein:
-BOT_TOKEN = "8921555395:AAHNXCSFw23XKCCDVFaM25wDLoe6z5ohlZw"
+BOT_TOKEN = "8921555395:AAErZkgn5mW0sopWAX3bLfZJeocrWNeUrt4"
 
 (
     STATE_CHECK_INFO,
