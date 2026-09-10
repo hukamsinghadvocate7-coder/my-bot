@@ -1,4 +1,20 @@
 import os
+import threading
+from flask import Flask
+
+web_server = Flask(__name__)
+
+@web_server.route('/')
+def ping():
+    return "Bot is running 24/7!"
+
+def run_flask():
+    port = int(os.environ.get("PORT", 8080))
+    web_server.run(host="0.0.0.0", port=port)
+
+threading.Thread(target=run_flask, daemon=True).start()
+
+
 import sys
 import json
 import base64
